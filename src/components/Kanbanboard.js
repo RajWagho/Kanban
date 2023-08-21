@@ -6,7 +6,7 @@ import personLogo from '../Icons/Users/icons8-male-user-48.png'
 import { getPriorityLogo } from '../utils/funcs'
 
 const Kanbanboard = ({ groupedData , userData,so}) =>{
-  
+  console.log(groupedData)
   const sortedGroupedData = { ...groupedData };
 
   // Sort the data within each group based on sortingOption
@@ -28,6 +28,7 @@ const Kanbanboard = ({ groupedData , userData,so}) =>{
           <div style={{display:'flex',alignItems:'center'}}>
             <img style={{ width:'35px' ,height:'35px' } } src={getRisk(groupName)} alt="" />
             <p style={{marginLeft:'15px'}} >{getName(groupName)}</p>
+            <p style={{color:'#9b9c9e' , marginLeft:'20px'}} >{Object.values(sortedGroupedData)[index].length}</p>
           </div>
 
           {sortedGroupedData[groupName].map(ticket => (
