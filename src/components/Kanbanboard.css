@@ -1,0 +1,75 @@
+
+.kanban-board {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap to new rows on small screens */
+  justify-content: space-between; /* Distribute columns evenly */
+  background-color: #f4f5f8;
+}
+
+.kanban-column {
+  background-color: #f4f5f8;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  width: calc(33.33% - 20px); /* Divide the available width into 3 columns */
+  box-sizing: border-box; /* Include padding and borders in the width calculation */
+  flex: 1; /* Distribute columns evenly on small screens */
+}
+  
+.user-feature{
+  display: inline-flex;
+  align-items: center;
+  justify-content:space-between;
+  border-style:solid;
+  border-width:1px;
+  font-size:13px;
+  color:#b9bec4 ;
+  padding:0px 10px ;
+  border-radius:8px;
+  padding-bottom:2px;
+  margin-left:10px
+}
+
+.status-feature{
+  display: flex;
+  align-items: center;
+}
+  /* .kanban-column h2 img{
+    margin: 0;
+    padding: 8px;
+    font-size: 18px;
+    background-color: #ddd;
+    border-radius: 4px;
+  } */
+  
+  /* Styling for Kanban Cards */
+  .kanban-card {
+    
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    
+  }
+  
+  
+  .kanban-card h3 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .kanban-card p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .ticket-info h3{
+    margin-left: '10px';
+  }
+  .statuslogo{
+    width: 17px;
+    height: 17px;
+  }
